@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html >
+<head>
+
+<title>PRODUCT FORM</title>
+</head>
+<body>
+<h1>product form</h1>
+<form action="/savepoint" method="post">
+<label>Brand:</label>
+<input type="text"  id="brand" name="name" th:value="*{brand}"/><br></br>
+<label>company:</label>
+<input type="text" name="brand" required>
+<br></br>
+<label>product:</label>
+<input type="text" name="madein" required>
+<br></br>
+<label>made in:</label>
+<input type="number" name="price" required>
+<br></br>
+<label>price:</label>
+<input type="number" name="quantity" required><br></br>
+<label>discount</label>
+<input type="number" name="discount" required><br></br>
+<button >submit</button>
+</form>
+</body>
+</html>

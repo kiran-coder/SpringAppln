@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Form details </title>
+</head>
+<body>
+<centre>
+        <h1>Edit Form</h1> 
+  <form th:action="@{/editsubmit/{id}(id=${id})}" th:object="${entity}" method="post">
+
+  <input type="text" placeholder="enter the productname" style="heigth:50px;width:400px;font-size:20px;"name="name" th:field="${product.name}"><br></br>
+  <input type="text" placeholder="enter the brand" style="heigth:50px;width:400px;font-size:20px;"name="brand" th:field="${product.brand}"><br></br>
+  <input type="text" placeholder="enter the madein" style="heigth:50px;width:400px;font-size:20px;"name="madein" th:field="${product.madein}"><br></br>
+ <input type="number" placeholder="enter the price" style="heigth:50px;width:400px;font-size:20px;"name="price" th:field="${product.price}"><br></br>
+  <input type="number" placeholder="enter the quantity" style="heigth:50px;width:400px;font-size:20px;"name="quantity" th:field="${product.quantity}"><br></br>
+<input type="number" placeholder="enter the discount" style="heigth:50px;width:400px;font-size:20px;"name="discount" th:field="${product.discount}"><br></br>
+    <button type="submit">submit</button>   
+       </form>
+       </centre>
+       </body>
+       </html>
+       
